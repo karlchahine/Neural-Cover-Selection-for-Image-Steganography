@@ -1,1 +1,1 @@
-# Neural-Cover-Selection-for-Image-Steganography
+# Neural Cover Selection for Image Steganography
