@@ -36,8 +36,10 @@ NumPy 1.24.4
 CUDA 12.1
 
 ```
-
-1. To run the script for $10$ images of CelebA-HQ and a payload $B=3$ bpp, use the following command:
+1. We include pretrained LISO steganographic encoder-decoder model weights for payloads $B=1,2,3,4$ bpp in the ```./logs``` directory.
+2. In contrast, you need to download the weights of the Diffusion models pretrained on [AFHQ-Dog](https://arxiv.org/abs/1912.01865) or [Celeb-AHQ](https://arxiv.org/abs/1710.10196) and put them in the ```./pretrained``` directory. Detailed instructions on how to download the models can be found [here](https://github.com/gwang-kim/DiffusionCLIP).
+3. To download the datasets, you can follow the detailed instructions in [this](https://github.com/gwang-kim/DiffusionCLIP) repo and put them in ```./data/afhq``` and ```./data/celeba_hq```.
+4. To run the script for $10$ images of CelebA-HQ and a payload $B=3$ bpp, use the following command:
 
 ```bash
 python3 main.py --config celeba.yml --t_0 500 --n_inv_step 40 --n_train_step 6 --n_test_step 40 --bpp 3 --dataset-class CelebAHQ --num-images 10
