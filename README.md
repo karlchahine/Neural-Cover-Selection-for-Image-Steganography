@@ -25,8 +25,31 @@ The initial cover image $\textbf{x}_0$ (where the subscript denotes the diffusio
 
 
 # What is in this Repo?
-Wr provide a PyTorch implementation of our DDIM cover selection framework. We also provide a script for computing performance metrics such as Error Rate, BRISQUE, PSNR and SSIM.
+We provide a PyTorch implementation of our DDIM cover selection framework for AFHQ and CelebA-HQ. We also provide a script for computing performance metrics such as Error Rate, BRISQUE, PSNR and SSIM.
 
 # Example
+1. To run the script for $10$ images of CelebA-HQ and a payload $B=3$ bpp, use the following command:
+
+```bash
+python3 main.py --config celeba.yml --t_0 500 --n_inv_step 40 --n_train_step 6 --n_test_step 40 --bpp 3 --dataset-class CelebAHQ --num-images 10
+```
+The code will perform 50 iterations on each of the 10 images. This will generate a .csv file named ```CelebAHQ_3bpp.csv```
+
+2. To calculate the metrics such as Error Rate, BRISQUE, PSNR and SSIM, use the following command:
+   
+```bash
+python3 calc_metrics.py --bpp 3 --dataset-class CelebAHQ
+```
+This script will find the iteration with the lowest error rate for every image, and calculate all image quality metrics for that corresponding iteration. It will also compute the metrics for iteration 0 (pre-optimization).
+
+# Citation
+
+# Acknowledgements
+Part of the code in this repository are based on the following publick repositories:
+
+- [https://github.com/gwang-kim/DiffusionCLIP](https://github.com/gwang-kim/DiffusionCLIP)
+- [https://github.com/cxy1997/LISO](https://github.com/cxy1997/LISO)
+
+ 
 
 
