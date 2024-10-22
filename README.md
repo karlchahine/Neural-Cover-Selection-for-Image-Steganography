@@ -1,5 +1,5 @@
 # Neural Cover Selection for Image Steganography
-This repository contains the code for our paper "Neural Cover Selection for image Steganography" by Karl Chahine and Hyeji Kim (NeurIPS 2024).
+This repository contains the code for our paper "Neural Cover Selection for image Steganography" by Karl Chahine and Hyeji Kim (NeurIPS 2024). This repository is being continuously updated.
 
 # Framework Summary
 Image steganography embeds secret bit strings within typical cover images, making them imperceptible to the naked eye yet retrievable through specific decoding techniques. The encoder takes as input a cover image ***x*** and a secret message ***m***, outputting a steganographic image ***s*** that appears visually similar to the original ***x***. The decoder then estimates the message ***m̂*** from ***s***. The setup is shown below, where _H_ and _W_ represent image height and width respectively:
