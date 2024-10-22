@@ -51,7 +51,7 @@ The code will perform 50 iterations on each of the 10 images. This will generate
 ```bash
 python3 calc_metrics.py --bpp 3 --dataset-class CelebAHQ
 ```
-This script will find the iteration with the lowest error rate for every image, and calculate all image quality metrics for that corresponding iteration. It will also compute the metrics for iteration 0 (pre-optimization).
+This script will find the iteration with the lowest error rate for every image, and calculate all image quality metrics for that corresponding iteration. It will also compute the metrics for iteration 0 (pre-optimization). To run experiments on AFHQ, simply replace ```--config celeba.yml``` by ```--config afhq.yml``` and ```--dataset-class CelebAHQ``` by ```--dataset-class AFHQ```.
 
 # Citation
 
