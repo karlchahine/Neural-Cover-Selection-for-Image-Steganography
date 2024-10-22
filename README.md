@@ -45,7 +45,7 @@ This script will find the iteration with the lowest error rate for every image, 
 # Citation
 
 # Acknowledgements
-Part of the code in this repository are based on the following publick repositories:
+Part of the code in this repository are based on the following public repositories:
 
 - [https://github.com/gwang-kim/DiffusionCLIP](https://github.com/gwang-kim/DiffusionCLIP)
 - [https://github.com/cxy1997/LISO](https://github.com/cxy1997/LISO)
