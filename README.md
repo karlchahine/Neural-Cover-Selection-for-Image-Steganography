@@ -24,7 +24,7 @@ The DDIM cover-selection framework is illustrated below:
 The initial cover image $\textbf{x}_0$ (where the subscript denotes the diffusion step) goes through the forward diffusion process to get the latent $\textbf{x}_T$ after _T_ steps. We optimize $\textbf{x}_T$ to minimize the loss ||***m*** - ***m̂***||. Specifically, $\textbf{x}_T$ goes through the backward diffusion process generating cover images that minimize the loss. We evaluate the gradients of the loss with respect to $\textbf{x}_T$ using backpropagation and use standard gradient based optimizers to get the optimal $\textbf{x}^*_T$ after some optimization steps. We use a pretrained DDIM, and a pretrained LISO, the state-of-the-art steganographic encoder and decoder from Chen et al. [2022]. The weights of the DDIM and the steganographic encoder-decoder are fixed throughout $\textbf{x}_T$'s optimization process.
 
 
-# What is in this Repo?
+# What is in this repository?
 We provide a PyTorch implementation of our DDIM cover selection framework for AFHQ and CelebA-HQ. We also provide a script for computing performance metrics such as Error Rate, BRISQUE, PSNR and SSIM.
 
 # Example
