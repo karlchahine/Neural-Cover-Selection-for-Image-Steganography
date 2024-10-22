@@ -7,8 +7,8 @@ import torchvision.transforms as tfs
 class AFHQ_dataset(Dataset):
     def __init__(self, image_root, transform=None, mode='train', animal_class='dog', img_size=256):
         super().__init__()
-        # self.image_paths = glob(os.path.join('./data/afhq/raw_images/train/images', '*flickr_dog*.jpg'))
-        self.image_paths = glob(os.path.join('./data/afhq/', '*flickr_dog*.jpg'))
+        self.image_paths = glob(os.path.join('./data/afhq/raw_images/train/images', '*flickr_dog*.jpg'))
+        #self.image_paths = glob(os.path.join('./data/afhq/', '*flickr_dog*.jpg'))
         self.transform = transform
         self.img_size = img_size
 
