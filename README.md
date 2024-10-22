@@ -28,6 +28,15 @@ The initial cover image $\textbf{x}_0$ (where the subscript denotes the diffusio
 We provide a PyTorch implementation of our DDIM cover selection framework for AFHQ and CelebA-HQ. We also provide a script for computing performance metrics such as Error Rate, BRISQUE, PSNR and SSIM.
 
 # Example
+This code was run with the following dependencies.
+```bash
+Python 3.8.10
+PyTorch 2.2.2
+NumPy 1.24.4
+CUDA 12.1
+
+```
+
 1. To run the script for $10$ images of CelebA-HQ and a payload $B=3$ bpp, use the following command:
 
 ```bash
