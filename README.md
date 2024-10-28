@@ -36,7 +36,7 @@ CUDA 12.1
 
 ```
 1. We include pretrained LISO steganographic encoder-decoder model weights for payloads $B=1,2,3,4$ bpp in the ```./logs``` directory.
-2. In contrast, you need to download the weights of the Diffusion models pretrained on [AFHQ-Dog](https://arxiv.org/abs/1912.01865) or [Celeb-AHQ](https://arxiv.org/abs/1710.10196) and put them in the ```./pretrained``` directory. Detailed instructions on how to download the models can be found [here](https://github.com/gwang-kim/DiffusionCLIP).
+2. In contrast, you need to download the weights of the Diffusion models pretrained on [AFHQ-Dog](https://arxiv.org/abs/1912.01865) or [CelebA-HQ](https://arxiv.org/abs/1710.10196) and put them in the ```./pretrained``` directory. Detailed instructions on how to download the models can be found [here](https://github.com/gwang-kim/DiffusionCLIP).
 3. To download the datasets, you can use the following code. The data will be stored in ```./data/afhq``` and ```./data/celeba_hq```. More details can be found [here](https://github.com/gwang-kim/DiffusionCLIP).
 ```bash
 # CelebA-HQ 
