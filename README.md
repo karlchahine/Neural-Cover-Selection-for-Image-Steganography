@@ -46,7 +46,7 @@ bash data_download.sh celeba_hq
 bash data_download.sh afhq 
 ```
 
-5. To run the script for $10$ images of CelebA-HQ and a payload $B=3$ bpp, use the following command:
+4. To run the script for $10$ images of CelebA-HQ and a payload $B=3$ bpp, use the following command:
 
 ```bash
 python3 main.py --config celeba.yml --t_0 500 --n_inv_step 40 --n_train_step 6 --n_test_step 40 --bpp 3 --dataset-class CelebAHQ --num-images 10
