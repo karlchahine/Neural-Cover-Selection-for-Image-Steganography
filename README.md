@@ -71,7 +71,7 @@ If you found our work helpful, please consider citing it.
 }
 ```
 
-# Acknowledgements
+# Acknowledgments
 Part of the code in this repository are based on the following public repositories:
 
 - [https://github.com/gwang-kim/DiffusionCLIP](https://github.com/gwang-kim/DiffusionCLIP)
