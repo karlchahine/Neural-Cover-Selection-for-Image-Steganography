@@ -61,6 +61,15 @@ python3 calc_metrics.py --bpp 3 --dataset-class CelebAHQ
 This script will find the iteration with the lowest error rate for every image, and calculate all image quality metrics for that corresponding iteration. It will also compute the metrics for iteration 0 (pre-optimization). To run experiments on AFHQ, simply replace ```--config celeba.yml``` by ```--config afhq.yml``` and ```--dataset-class CelebAHQ``` by ```--dataset-class AFHQ```.
 
 # Citation
+If you found our work helpful, please consider citing it.
+```bibtex
+@article{chahine2024neural,
+  title={Neural Cover Selection for Image Steganography},
+  author={Chahine, Karl and Kim, Hyeji},
+  journal={Advances in Neural Information Processing Systems},
+  year={2024}
+}
+```
 
 # Acknowledgements
 Part of the code in this repository are based on the following public repositories:
