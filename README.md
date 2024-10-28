@@ -51,7 +51,7 @@ bash data_download.sh afhq
 ```bash
 python3 main.py --config celeba.yml --t_0 500 --n_inv_step 40 --n_train_step 6 --n_test_step 40 --bpp 3 --dataset-class CelebAHQ --num-images 10
 ```
-The code will perform 50 iterations on each of the 10 images. This will generate a .csv file named ```CelebAHQ_3bpp.csv```
+The code will perform 50 iterations on each of the 10 images. This will generate a .csv file named ```CelebAHQ_3bpp.csv```.
 
 5. To calculate the metrics such as Error Rate, BRISQUE, PSNR and SSIM, use the following command:
    
