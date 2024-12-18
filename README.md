@@ -63,11 +63,10 @@ This script will find the iteration with the lowest error rate for every image, 
 # Citation
 If you found our work helpful, please consider citing it.
 ```bibtex
-@article{chahine2024neural,
+@inproceedings{chahineneural,
   title={Neural Cover Selection for Image Steganography},
   author={Chahine, Karl and Kim, Hyeji},
-  journal={Advances in Neural Information Processing Systems},
-  year={2024}
+  booktitle={The Thirty-eighth Annual Conference on Neural Information Processing Systems}
 }
 ```
 
